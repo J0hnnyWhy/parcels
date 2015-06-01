@@ -7,24 +7,8 @@ class Parcel
   @weight = weight
   end
 
-  define_method(:height) do
-    @height
-  end
-
-  define_method(:length) do
-    @length
-  end
-
-  define_method(:depth) do
-    @depth
-  end
-
-  define_method(:weight) do
-    @weight
-  end
-
   define_method(:volume) do
-     @height * @length * @depth
+     @length * @height * @depth
   end
 
   define_method(:cost_to_ship) do
