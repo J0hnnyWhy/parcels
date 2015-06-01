@@ -33,4 +33,17 @@ describe('#weight') do
     expect(new_parcel.weight()).to(eq("10"))
   end
 end
+describe('#volume') do
+  it("should return the product of the sides..") do
+    new_parcel = Parcel.new(3, 4, 5, 10)
+    expect(new_parcel.volume()).to(eq(60))
+  end
+end
+
+describe('#cost_to_ship') do
+  it('should return the shipping cost for a parcel') do
+    new_parcel = Parcel.new(3, 4, 5, 10)
+    expect(new_parcel.cost_to_ship()).to(eq(6))
+  end
+end
 end
